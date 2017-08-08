@@ -49,7 +49,7 @@ Thread 类下面的3个方法：
 ### public static boolean interrupted()方法
 测试当前的线程是否中断，并且清楚线程的中断状态。
 ### public boolean isInterrupted()
-测试当前线程是否已经被中断，该方法不会对线程的中断状态作出任何的改变。
+> 测试当前线程是否已经被中断，该方法不会对线程的中断状态作出任何的改变。
 若调用了Thread.interrupt方法在run方法中并没有相应的处理即抛出interrupedException异常则线程继续运行。  
 可以使用interrupt和return来是线程停止。（不建议使用该方法）
  
@@ -88,10 +88,10 @@ A hint to the scheduler that the current thread is willing to yield its current 
 *   synchronzed关键字可以保证原子性和间接的可见性;
 
 # 原子类：
-1.AtomicBoolean
-2.AtomicInteger
-3.AtomicLong
-4.AtomicReference
+1.  AtomicBoolean
+2.  AtomicInteger
+3.  AtomicLong
+4.  AtomicReference
 若使用原子类进行操作则其操作为原子性，而如果有多个原子性操作则必须对多个原子操作进行同步。
 
 
