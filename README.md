@@ -76,16 +76,16 @@ A hint to the scheduler that the current thread is willing to yield its current 
 *    This thread is forbidden access to the resource ,because we don't what's time the thread was interrupted.
 
 # Join:
-1.join(){join(0)}-Waits for this thread to die;
-2.join(Long){}-Waits at most Long milliseconds for this thread to die.A timeout of Long means to wait forever
-3.join(Long,Int){}-Wait at most Long milliseconds plus Int for this thread to die.
+*   join(){join(0)}-Waits for this thread to die;
+*   join(Long){}-Waits at most Long milliseconds for this thread to die.A timeout of Long means to wait forever
+*   join(Long,Int){}-Wait at most Long milliseconds plus Int for this thread to die.
 
 # Volatile
-1.volatile关键字是synchronized关键字的轻量级实现;
-2.volatile关键字只能用于修饰变量;
-3.volatile关键字保证数据的可见行，而不保证数据的原子性
-4.线程访问volatile关键字不会阻塞，而访问synchronized关键字会形成阻;
-5.synchronzed关键字可以保证原子性和间接的可见性;
+*   volatile关键字是synchronized关键字的轻量级实现;
+*   volatile关键字只能用于修饰变量;
+*   volatile关键字保证数据的可见行，而不保证数据的原子性
+*   线程访问volatile关键字不会阻塞，而访问synchronized关键字会形成阻;
+*   synchronzed关键字可以保证原子性和间接的可见性;
 
 # 原子类：
 AtomicBoolean
