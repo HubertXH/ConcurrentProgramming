@@ -92,6 +92,7 @@ A hint to the scheduler that the current thread is willing to yield its current 
 2.  AtomicInteger
 3.  AtomicLong
 4.  AtomicReference
+
 若使用原子类进行操作则其操作为原子性，而如果有多个原子性操作则必须对多个原子操作进行同步。
 
 
