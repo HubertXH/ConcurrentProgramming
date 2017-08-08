@@ -88,10 +88,10 @@ A hint to the scheduler that the current thread is willing to yield its current 
 *   synchronzed关键字可以保证原子性和间接的可见性;
 
 # 原子类：
-AtomicBoolean
-AtomicInteger
-AtomicLong
-AtomicReference
+*   AtomicBoolean
+*   AtomicInteger
+*   AtomicLong
+*   AtomicReference
 若使用原子类进行操作则其操作为原子性，而如果有多个原子性操作则必须对多个原子操作进行同步。
 
 
