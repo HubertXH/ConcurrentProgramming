@@ -24,6 +24,7 @@ public class TestCountDownLatch {
 			arrived.await();
 			System.out.println("The Size of Map:"+map.size());
 		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		service.shutdown();
@@ -44,12 +45,13 @@ class RunFactory implements Runnable{
 	@Override
 	public void run() {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			map.put(Thread.currentThread().getName(),String.valueOf((int)Math.random()*1000));
 			System.out.println(Thread.currentThread().getName()+"-arrived and put object in house");
 			countLatch.countDown();
 			System.out.println("count num = "+countLatch.getCount());
 		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
